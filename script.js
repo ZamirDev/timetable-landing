@@ -19,7 +19,7 @@ if (navToggle && navLinks) {
   );
 }
 
-const revealEls = document.querySelectorAll(".card, .section-head, .hero-stats");
+const revealEls = document.querySelectorAll(".section-head");
 revealEls.forEach((el) => el.classList.add("reveal"));
 
 const io = new IntersectionObserver(

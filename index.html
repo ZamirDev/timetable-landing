@@ -3,22 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zionia — Smart Timetable Management System</title>
-  <meta name="description" content="Zionia generates conflict-free school timetables in 10 seconds. One click, zero conflicts, every classroom scheduled." />
+  <title>Zionia — Smart Timetable Management</title>
+  <meta name="description" content="Zionia builds conflict-free school timetables in 10 seconds. Made for schools anywhere." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="bg-orbs" aria-hidden="true">
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
-  </div>
 
   <!-- NAV -->
-  <header class="nav glass">
+  <header class="nav">
     <div class="nav-inner">
       <a href="#top" class="brand">
         <span class="brand-mark">Z</span>
@@ -26,11 +21,11 @@
       </a>
       <nav class="nav-links" id="navLinks">
         <a href="#features">Features</a>
-        <a href="#benchmarks">Benchmarks</a>
+        <a href="#why">Why us</a>
         <a href="#how">How it works</a>
         <a href="#pricing">Pricing</a>
       </nav>
-      <a href="#contact" class="btn btn-primary nav-cta">Get in touch</a>
+      <a href="#contact" class="btn btn-primary nav-cta">Say hello</a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -40,24 +35,46 @@
   <!-- HERO -->
   <section class="hero" id="top">
     <div class="hero-inner">
-      <span class="badge glass">Built for Indian schools</span>
-      <h1 class="hero-title">
-        Every classroom scheduled.
-        <span class="grad-text">Zero conflicts.</span>
-      </h1>
-      <p class="hero-sub">
-        Zionia generates conflict-free school timetables in <strong>10 seconds</strong>.
-        One click — no more 2–3 days of manual scheduling every term.
-      </p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Book a free demo</a>
-        <a href="#features" class="btn btn-ghost">See features</a>
-      </div>
-      <div class="hero-stats glass">
-        <div class="stat"><span class="stat-num">10s</span><span class="stat-label">timetable generation</span></div>
-        <div class="stat"><span class="stat-num">0</span><span class="stat-label">teacher conflicts</span></div>
-        <div class="stat"><span class="stat-num">&lt;250KB</span><span class="stat-label">initial load</span></div>
-        <div class="stat"><span class="stat-num">100%</span><span class="stat-label">data isolated per school</span></div>
+      <div class="hero-copy">
+        <h1 class="hero-title">
+          Beat the timetable
+          <span class="doodle-wrap">dread
+            <svg class="squiggle" viewBox="0 0 220 12" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M3 9 Q 28 2 55 7 T 108 7 T 160 7 T 217 7" fill="none" stroke="#fb923c" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+          </span>
+          in 10 seconds.
+        </h1>
+        <p class="hero-sub">
+          Zionia turns your teachers, subjects and classes into a
+          conflict-free timetable on the click of a button.
+          Made for schools — anywhere.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Request a free demo</a>
+          <a href="#how" class="btn btn-soft">See how it works</a>
+        </div>
+
+        <div class="sticker sticker-1">⚡ zero conflicts</div>
+        <div class="sticker sticker-2">🎨 10 seconds</div>
+        <svg class="doodle doodle-sun" viewBox="0 0 60 60" aria-hidden="true">
+          <circle cx="30" cy="30" r="12" fill="#fbbf24"/>
+          <g stroke="#fbbf24" stroke-width="4" stroke-linecap="round">
+            <line x1="30" y1="2" x2="30" y2="12"/><line x1="30" y1="48" x2="30" y2="58"/>
+            <line x1="2" y1="30" x2="12" y2="30"/><line x1="48" y1="30" x2="58" y2="30"/>
+            <line x1="10" y1="10" x2="17" y2="17"/><line x1="43" y1="43" x2="50" y2="50"/>
+            <line x1="43" y1="17" x2="50" y2="10"/><line x1="10" y1="50" x2="17" y2="43"/>
+          </g>
+        </svg>
+        <svg class="doodle doodle-flower" viewBox="0 0 60 60" aria-hidden="true">
+          <g fill="#60a5fa">
+            <ellipse cx="30" cy="18" rx="7" ry="11"/><ellipse cx="30" cy="42" rx="7" ry="11"/>
+            <ellipse cx="18" cy="30" rx="11" ry="7"/><ellipse cx="42" cy="30" rx="11" ry="7"/>
+          </g>
+          <circle cx="30" cy="30" r="7" fill="#fbbf24"/>
+          <line x1="30" y1="30" x2="52" y2="54" stroke="#4ade80" stroke-width="4" stroke-linecap="round"/>
+          <ellipse cx="56" cy="52" rx="6" ry="4" fill="#4ade80"/>
+        </svg>
       </div>
     </div>
   </section>
@@ -65,95 +82,91 @@
   <!-- FEATURES -->
   <section class="section" id="features">
     <div class="section-head">
-      <span class="eyebrow">Features</span>
-      <h2>Everything your timetable needs, covered</h2>
+      <h2>Everything the timetable needs</h2>
+      <p class="lead">No spreadsheets. No slip-ups. Just a schedule that works.</p>
     </div>
     <div class="grid">
-      <div class="card glass">
+      <div class="card tilt-left">
         <div class="card-icon">⚡</div>
         <h3>Auto-generation</h3>
-        <p>Creates conflict-free timetables in 10 seconds with one click. No manual adjustments.</p>
+        <p>One click, and every class gets a conflict-free schedule. No manual fixing.</p>
       </div>
-      <div class="card glass">
+      <div class="card tilt-right">
         <div class="card-icon">🎯</div>
         <h3>Teacher quotas</h3>
-        <p>Control how many periods each teacher teaches per week — balanced workloads, fairly.</p>
+        <p>Set how many periods each teacher takes per week — workloads stay fair.</p>
       </div>
-      <div class="card glass">
+      <div class="card tilt-left">
         <div class="card-icon">🗓️</div>
         <h3>Leave management</h3>
-        <p>Teachers request leave online. Admin approves with one click and periods are auto-highlighted.</p>
+        <p>Teachers request leave online, admin approves in one tap, periods auto-flag.</p>
       </div>
-      <div class="card glass">
+      <div class="card tilt-right">
         <div class="card-icon">📄</div>
         <h3>PDF export</h3>
-        <p>Download any class timetable as a clean, printable PDF in one click.</p>
+        <p>Any class timetable downloads as a clean, printable PDF. Print and pin it.</p>
       </div>
-      <div class="card glass">
+      <div class="card tilt-left">
         <div class="card-icon">👩‍🏫</div>
         <h3>Teacher login</h3>
-        <p>Each teacher sees only their own schedule. Class teachers get their class view too.</p>
+        <p>Each teacher sees only their own schedule — no hunting through a shared file.</p>
       </div>
-      <div class="card glass">
+      <div class="card tilt-right">
         <div class="card-icon">🌐</div>
-        <h3>Works everywhere</h3>
-        <p>Phones, tablets, laptops — any browser, any OS. No install, no dependency on one device.</p>
+        <h3>Runs anywhere</h3>
+        <p>Phones, tablets, laptops — any browser, any OS. Nothing to install.</p>
       </div>
     </div>
   </section>
 
-  <!-- BENCHMARKS -->
-  <section class="section" id="benchmarks">
+  <!-- WHY -->
+  <section class="section" id="why">
     <div class="section-head">
-      <span class="eyebrow">Benchmarks &amp; Security</span>
-      <h2>Fast, reliable, and private by default</h2>
+      <h2>Why schools stick with us</h2>
+      <p class="lead">Fast for the stressed admin, quiet for the worried principal.</p>
     </div>
-    <div class="bench-grid">
-      <div class="card glass bench-card">
-        <h3>Performance</h3>
-        <ul class="ticks">
-          <li>Conflict-free timetable in <strong>10 seconds</strong></li>
-          <li>Under <strong>250KB</strong> initial load — fast even on 2G/3G</li>
+    <div class="why-wrap">
+      <div class="card why-card">
+        <h3>Fast, even on farm wifi</h3>
+        <ul>
+          <li>Under <strong>250KB</strong> initial load — happy on 2G/3G</li>
           <li>Works behind school firewalls &amp; security systems</li>
-          <li>Compatible with Windows, macOS &amp; Linux</li>
+          <li>Windows, macOS, Linux — it just runs</li>
         </ul>
       </div>
-      <div class="card glass bench-card">
-        <h3>Security</h3>
-        <ul class="ticks">
-          <li>Passwords encrypted with <strong>bcrypt</strong> (industry standard)</li>
-          <li>Secure login with <strong>JWT</strong> tokens</li>
-          <li><strong>HTTPS</strong> encryption on all connections</li>
-          <li>Each school's data is <strong>completely isolated</strong></li>
-          <li>Role-based access control (admin / teacher / student)</li>
+      <div class="card why-card why-card-accent">
+        <h3>Private by default</h3>
+        <ul>
+          <li>Passwords hashed with <strong>bcrypt</strong></li>
+          <li>Secure <strong>JWT</strong> logins over HTTPS</li>
+          <li>Every school's data is <strong>fully isolated</strong></li>
+          <li>Role-based access — admin / teacher / student</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- HOW IT WORKS -->
+  <!-- HOW -->
   <section class="section" id="how">
     <div class="section-head">
-      <span class="eyebrow">How it works</span>
       <h2>Live in minutes, not days</h2>
     </div>
-    <ol class="steps">
-      <li class="card glass step"><span class="step-num">1</span><div><h3>Sign up</h3><p>Create your admin account in 2 minutes.</p></div></li>
-      <li class="card glass step"><span class="step-num">2</span><div><h3>Add teachers</h3><p>Enter names &amp; subjects, or import from Excel.</p></div></li>
-      <li class="card glass step"><span class="step-num">3</span><div><h3>Create classes</h3><p>Set up classes, periods, and school timing.</p></div></li>
-      <li class="card glass step"><span class="step-num">4</span><div><h3>Generate</h3><p>One click — every class scheduled in 10 seconds.</p></div></li>
-      <li class="card glass step"><span class="step-num">5</span><div><h3>Export</h3><p>Download timetables as PDF for printing.</p></div></li>
-    </ol>
+    <div class="steps">
+      <div class="card step"><span class="step-num">1</span><div><h3>Sign up</h3><p>Create your school's admin account — takes 2 minutes.</p></div></div>
+      <div class="card step"><span class="step-num">2</span><div><h3>Add teachers</h3><p>Type names &amp; subjects or import straight from Excel.</p></div></div>
+      <div class="card step"><span class="step-num">3</span><div><h3>Set classes</h3><p>Classes, periods, timings — set once, forget it.</p></div></div>
+      <div class="card step"><span class="step-num">4</span><div><h3>Generate</h3><p>Click. Every class scheduled in 10 seconds.</p></div></div>
+      <div class="card step"><span class="step-num">5</span><div><h3>Export</h3><p>Download PDFs, print, and put it on the board.</p></div></div>
+    </div>
   </section>
 
   <!-- PRICING -->
   <section class="section" id="pricing">
     <div class="section-head">
-      <span class="eyebrow">Pricing</span>
-      <h2>Simple and affordable</h2>
+      <h2>Simple, flat pricing</h2>
     </div>
-    <div class="pricing-card glass">
-      <div class="price-row">
+    <div class="pricing-card card">
+      <div class="price-head">
         <div>
           <h3>School plan</h3>
           <p class="price-note">Flat rate — no per-student fees</p>
@@ -163,25 +176,24 @@
         </div>
       </div>
       <ul class="ticks">
-        <li>Free 2-week pilot — try before you commit</li>
-        <li>Comparable to a teacher's monthly photocopy budget</li>
-        <li>15x cheaper than typical school ERP scheduling modules</li>
+        <li>Free 2-week pilot — no payment to start</li>
+        <li>About the same as a teacher's monthly photocopy budget</li>
+        <li>15x cheaper than typical ERP scheduling add-ons</li>
       </ul>
-      <a href="#contact" class="btn btn-primary btn-block">Start your free pilot</a>
+      <a href="#contact" class="btn btn-primary btn-block">Start a free pilot</a>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section class="section" id="contact">
     <div class="section-head">
-      <span class="eyebrow">Contact</span>
-      <h2>Let's get your school scheduled</h2>
+      <h2>Let's sort your schedule</h2>
+      <p class="lead">Tell us about your school and we'll set up a free demo &amp; pilot.</p>
     </div>
-    <div class="contact-card glass">
-      <p class="contact-sub">Tell us about your school and we'll set up a free demo and pilot.</p>
+    <div class="contact-card card">
       <div class="contact-actions">
         <a href="mailto:zamirmemon01@gmail.com" class="btn btn-primary">✉️ zamirmemon01@gmail.com</a>
-        <a href="https://www.linkedin.com/in/zamir-memon-721623380/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/zamir-memon-721623380/" target="_blank" rel="noopener" class="btn btn-soft">LinkedIn</a>
       </div>
     </div>
   </section>
@@ -189,7 +201,7 @@
   <footer class="footer">
     <div class="footer-inner">
       <span>© <span id="year"></span> Zionia. All rights reserved.</span>
-      <span>Built by Zamir Memon &amp; Henil Soni</span>
+      <span>Made with care by Zamir &amp; Henil</span>
     </div>
   </footer>
 
